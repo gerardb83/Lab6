@@ -6,14 +6,12 @@ public class Lab6 {
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to Grand Circus Casino!");
-		
 		int dieSides = getSides();
 		rollDie(dieSides);
 	}
 
 	public static int getSides() {
 		System.out.println("\nHow many sides should each die have?");
-		
 		while (!scnr.hasNextInt()) scnr.next();
 		int userDieSides = scnr.nextInt();
 		
@@ -31,9 +29,9 @@ public class Lab6 {
 	public static void rollDie(int dieSides) {
 		String rollAgain = "y";
 		int rollCount = 0;
+		
 		do {
-			rollCount++;
-			
+			rollCount++;	
 			int firstDie = generateRandomDieRoll(dieSides);
 			int secondDie = generateRandomDieRoll(dieSides);
 
